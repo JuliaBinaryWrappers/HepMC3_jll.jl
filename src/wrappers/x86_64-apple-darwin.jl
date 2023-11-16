@@ -3,7 +3,7 @@ export libHepMC3, libHepMC3search
 
 JLLWrappers.@generate_wrapper_header("HepMC3")
 JLLWrappers.@declare_library_product(libHepMC3, "@rpath/libHepMC3.3.dylib")
-JLLWrappers.@declare_library_product(libHepMC3search, "@rpath/libHepMC3search.4.dylib")
+JLLWrappers.@declare_library_product(libHepMC3search, "@rpath/libHepMC3search.5.dylib")
 function __init__()
     JLLWrappers.@generate_init_header()
     JLLWrappers.@init_library_product(
@@ -14,7 +14,7 @@ function __init__()
 
     JLLWrappers.@init_library_product(
         libHepMC3search,
-        "lib/libHepMC3search.4.dylib",
+        "lib/libHepMC3search.5.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
